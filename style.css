@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    position: relative ;
+}
+
+.nav_bar {
+    color: white;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-size: large;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+h1 {
+    color: darkorange;
+}
+
+.word {
+    color: darkorange;
+    font-weight: bold;
+    font-size: 35px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: navy;
+    background-image: url(images/WhatsApp\ Image\ 2024-08-10\ at\ 8.35.25\ PM\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+}
+
+.container-left {
+    object-fit: contain;
+}
+
+.header-right {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+img {
+    max-height: 80px;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.container-left,
+.container-right {
+    flex: 1;
+}
+
+button {
+    cursor: pointer;
+    width: 150px;
+    height: 3rem;
+    border-radius: 20px;
+    color: darkorange;
+    background-color: black;
+    font-style: oblique;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(7, 4, 0);
+}
+
+br {
+    font: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: aliceblue;
+}
+
+.lead {
+    color: darkorange;
+    text-decoration: wavy;
+    justify-content: center;
+
+}
+
+span {
+    color: gold;
+}
+
+.full-space {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (width <700px) {
+    .wrap{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .close{
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    main {
+        flex-direction: column;
+        align-items: start;
+        align-items: center;
+    }
+
+    .nav_bar {
+        display:none;
+    }
+    
+    .nav-active{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        padding-top: 10px;
+        visibility: visible;
+        background-color: black;
+    }
+
+    .close-active{
+        visibility: visible;
+    }
+
+    .hamburger-inactive{
+        visibility: hidden;
+    }
+
+    .nav-active li {
+        height: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        width: 30%;
+
+    }
+
+}
+
+@media (height >700px) {
+    main {
+        font-size: x-large;
+    }
+
+}
+
+@media (height >1000px) {
+    body {
+        background-size: 100vh;
+    }
+}

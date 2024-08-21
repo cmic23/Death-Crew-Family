@@ -1,0 +1,44 @@
+body{
+    background-image: url(images/WhatsApp\ Image\ 2024-08-10\ at\ 8.35.25\ PM\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100;
+}
+p{
+    font: bolder;
+    font-family: cursive;
+    font-size: x-large;
+    text-align: center;
+    color: darkorange;
+}
+a{
+    color: gold;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+@media (width <700px ){
+    body{
+        background-size: cover;
+    }
+    img{
+        width: 50%;
+    }
+}
+@media (width <700px){
+    body{
+        background-size: 100vmax;
+}
+}
+    @media (height >700px){
+        body{
+            background-size: 100;
+        }
+    }
+    @media (height >1000px){
+        body{
+            background-size: 100vh;
+        }
+    }
+    
