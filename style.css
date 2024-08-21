@@ -56,9 +56,6 @@ main {
     display: flex;
 }
 
-.container-left {
-    object-fit: contain;
-}
 
 .header-right {
     display: flex;
@@ -125,7 +122,10 @@ span {
     justify-content: space-around;
 }
 
-@media (width <700px) {
+@media (width <720px) {
+    .container-left{
+     justify-content: start;
+    }
     .wrap{
         visibility: visible;
         cursor: pointer;
@@ -136,11 +136,15 @@ span {
         position: absolute;
 
     }
-
+    .min{
+        visibility: hidden;
+    }
+     .lead{
+        visibility: hidden;
+     }
     main {
         flex-direction: column;
         align-items: start;
-        align-items: center;
     }
 
     .nav_bar {
@@ -161,11 +165,12 @@ span {
     .close-active{
         visibility: visible;
     }
-
+    .word{
+        font-size: x-large;
+    }
     .hamburger-inactive{
         visibility: hidden;
     }
-
     .nav-active li {
         height: 30px;
         padding-top: 5px;
